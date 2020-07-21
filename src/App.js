@@ -123,13 +123,11 @@ function App() {
     </div>  
     <Card className="app_right">
       <CardContent>
-      <h3>Live Cases by Countries</h3>
+      <h3 className="app_graphTitle">Live Cases by Countries</h3>
         <Table countries={tableData} />
         <h3>Worldwide new {casesType} </h3>
-        <LineGraph casesType={casesType} />
-      </CardContent>
-      {/*table*/}
-       {/*Graph*/}    
+        <LineGraph className="app_graph" casesType={casesType} />
+      </CardContent> 
     </Card>
      </div>
   );
