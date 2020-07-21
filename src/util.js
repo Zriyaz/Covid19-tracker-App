@@ -24,6 +24,8 @@ const casesTypeColor={
   },
 }
 
+
+
 export const  sortData =(data)=>{
   const sortedData=[...data];
 
@@ -36,6 +38,10 @@ export const  sortData =(data)=>{
   })
   return sortedData
 }
+
+export const prettyPrintState= (stat)=> 
+   stat ? `+${numeral(stat).format("0,0a")}`: null
+
 
 export const showDataOnMap = (data , casesType="cases") =>(
   data.map(country=>(

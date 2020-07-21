@@ -16,7 +16,9 @@
   width:100%;
   border-radius: 5px;
 }
-
+.app_dropdown{
+  background-color:white;
+}
 .info-flag{
   height: 80px;
   width: 100%;
